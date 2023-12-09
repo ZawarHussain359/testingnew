@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<input type="range" value="0" min="1" max="255" step="1" id="red" oninput="myfunction()">
+<input type="range" value="0" min="1" max="255" step="1" id="green" oninput="myfunction()">
+<input type="range" value="0" min="1" max="255" step="1" id="blue" oninput="myfunction()">
+<div id="res" style="width:300px; height: 200px; border:2px solid black;"></div>
+<script>
+function myfunction(){
+var red,green,blue;
+red=document.getElementById("red").value;
+green=document.getElementById("green").value;
+blue=document.getElementById("blue").value;
+document.getElementById("res").style.backgroundColor=`rgb(${red},${green},${blue})`;
+}
+</script>
+</body>
+</html>

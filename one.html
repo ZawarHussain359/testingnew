@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Document</title>
+<style>
+#res{
+width:300px;
+height: 300px;
+border: 2px solid red;
+}
+</style>
+</head>
+<body>
+<input type="range" id="one" min="1" max="7" value="0" step="1">
+<!--<div id="res"></div>-->
+<br><br>
+<img src="" id="res">
+<script>
+document.getElementById("one").oninput=myfunction;
+function myfunction(){
+var a=document.getElementById("one").value;
+//document.getElementById("res").style.border=a+"px solid red";
+document.getElementById("res").src=a+".jpg";
+}
+</script>
+</body>
+</html>

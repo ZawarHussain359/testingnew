@@ -1,0 +1,31 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<input type="text" id="ans"><br><br>   
+<button onclick="myfunction('1')">1</button>
+<button onclick="myfunction('2')">2</button>
+<button onclick="myfunction('+')">+</button>
+<button onclick="myfunctiontwo()">=</button>
+<button onclick="myfunctionthree()">AC</button>
+<button onclick="backspacee()">C</button>
+
+<script>
+function myfunction(val){
+document.getElementById("ans").value+=val;
+}
+function myfunctiontwo(){
+document.getElementById("ans").value=eval(document.getElementById("ans").value);
+}
+function myfunctionthree(){
+document.getElementById("ans").value="";
+}
+function backspacee(){
+var abc=document.getElementById("ans").value;
+document.getElementById("ans").value=abc.substring(0,abc.length-1);
+}
+</script>
+</body>
+</html>

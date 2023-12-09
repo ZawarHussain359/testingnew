@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+#res{
+width:300px;
+height:200px;
+border:2px solid red;
+}
+</style>
+</head>
+<body>
+<input type="range" value="0" min="1" max="255" step="1" oninput="myfunction()" id="one">
+<h1 id="two"></h1>
+<div id="res"></div>
+<script>
+function myfunction(){
+var a=document.getElementById("one").value;
+document.getElementById("res").style.backgroundColor=`rgb(${a},0,0)`; 
+document.getElementById("two").innerHTML=a;
+
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<h1>Q1: What is HTML?</h1>
+<h2>A: Software</h2>
+<h2>B: Hardware</h2>
+<h2>C: Language</h2>
+<h2>D: None</h2>
+<input type="text" id="one"><br><br>
+<h1>Q2: What is Software?</h1>
+<h2>A: Touchable Part</h2>
+<h2>B: Untouchable Part</h2>
+<h2>C: Both A/B</h2>
+<h2>D: None</h2>
+<input type="text" id="two"><br><br>
+<h1>Q3: What is Hardware?</h1>
+<h2>A: Touchable Part</h2>
+<h2>B: Untouchable Part</h2>
+<h2>C: Both A/B</h2>
+<h2>D: None</h2>
+<input type="text" id="thre"><br><br>
+<button onclick="myfunction()">Click Here</button>
+<h1 id="ron"></h1>
+<h1 id="rtw"></h1>
+<h1 id="rth"></h1>
+<script>
+function myfunction(){
+var a,b,c;
+a=document.getElementById("one").value;
+b=document.getElementById("two").value;
+c=document.getElementById("thre").value;
+
+if(a=='c')
+{
+document.getElementById("ron").innerHTML="Q1 Right";
+}
+else
+{
+document.getElementById("ron").innerHTML="Q1 Wrong";
+}
+//////////////////////////////
+if(b=='b'){
+document.getElementById("rtw").innerHTML="Q2 Right";
+}
+else{
+document.getElementById("rtw").innerHTML="Q2 Wrong";
+}
+////////////////////////////
+if(c=='a'){
+document.getElementById("rth").innerHTML="Q3 Right";
+}
+else{
+document.getElementById("rth").innerHTML="Q3 Wrong";
+}
+}
+</script>
+</body>
+</html>

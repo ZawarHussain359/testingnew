@@ -1,0 +1,29 @@
+<html>
+<head>    
+<title>Document</title>
+</head>
+<body> 
+<input type="text" id="ans"><br><br>
+<button onclick="myfunction(1)">1</button>
+<button onclick="myfunction(2)">2</button>
+<button onclick="myfunction('+')">+</button>
+<button onclick="myfunctiontwo()">=</button>
+<button onclick="myfunctionthree()">AC</button>
+<button onclick="handleClear()">Clear</button>
+<script>
+function myfunction(val){
+var a=document.getElementById("ans").value+=val;
+}
+function myfunctiontwo(){
+var a=eval(document.getElementById("ans").value);
+document.getElementById("ans").value=a;
+}
+function myfunctionthree(){
+document.getElementById("ans").value="";
+}
+function handleClear() {
+document.getElementById("ans").value=document.getElementById("ans").value.slice(0,-1);
+}
+</script>
+</body>
+</html>

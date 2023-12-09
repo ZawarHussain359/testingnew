@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>RGB Color Mixer</title>
+<style>
+#colorDiv {
+width: 200px;
+height: 200px;
+border:2px solid rgb(0, 0, 0);
+}
+</style>
+</head>
+<body>  
+<input type="range" id="redRange" min="0" max="255" step="1" value="0" oninput="updateColor()">  
+
+<input type="range" id="greenRange" min="0" max="255" step="1" value="0" oninput="updateColor()">
+
+<input type="range" id="blueRange" min="0" max="255" step="1" value="0" oninput="updateColor()">
+<div id="colorDiv"></div>
+<script>
+function updateColor() {
+var redValue = document.getElementById('redRange').value;
+var greenValue = document.getElementById('greenRange').value;
+var blueValue = document.getElementById('blueRange').value;
+document.getElementById("colorDiv").style.backgroundColor=`rgb(${redValue},${greenValue},${blueValue})`;
+
+document.getElementById("colorDiv").style.backgroundColor="rgb(" + redValue + "," + greenValue + "," + blueValue + ")";
+}
+</script>
+</body>
+</html>

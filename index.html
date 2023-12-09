@@ -1,0 +1,22 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<input type="text" placeholder="Enter any number" id="one">
+<input type="button" onclick="myfunction()" value="Click Here">
+<h1 id="res"></h1>
+<script>
+function myfunction(){
+var a=parseFloat(document.getElementById("one").value);
+if(a%2==0){
+document.getElementById("res").innerHTML="Even Number";
+}
+else{
+document.getElementById("res").innerHTML="Odd Number";
+}
+}
+</script>
+</body>
+</html>
